@@ -1,0 +1,209 @@
+@import "../js/libs/bootstrap/less/bootstrap.less";
+@import "../js/libs/bootstrap/less/responsive.less";
+// Fonts
+@import "fonts.less";
+
+.bg {
+  background: url(/img/at-the-board.jpg) no-repeat top center;
+  height: 750px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.brand {
+  background: url(/img/logo.png) no-repeat top left;
+  width: 196px;
+  height: 22px;
+  padding: 0 !important;
+  margin-top: 7px;
+}
+
+
+/* ==========================================================================
+   Carousel Base Class
+   ========================================================================== */
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel .container {
+  position: relative;
+  z-index: 9;
+}
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+}
+
+.carousel .item {
+  height: 600px;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  //min-width: 100%;
+  //height: 500px;
+}
+
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 670px;
+  padding: 0 20px;
+  margin-top: 200px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) {
+  .carousel .item {
+    height: 500px;
+  }
+  .carousel img {
+    width: auto;
+    height: 500px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .carousel .container {
+
+  }
+  .carousel .item {
+    height: 300px;
+  }
+  .carousel img {
+    height: 300px;
+  }
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
+}
+
+
+/* ==========================================================================
+   Heading Classes
+   ========================================================================== */
+.super {
+  font-family: Nexa, Arial, sans-serif;
+  color: #FFF;
+  font-size: 60px;
+  line-height: 1.4 !important;
+  margin-bottom: 12px !important;
+  font-weight: bold;
+  text-shadow: none !important;
+}
+
+.highlight-green {
+  background: #b8d30b;
+  background: rgba(184,211,11,0.75);
+  padding: 14px 20px 6px 20px;
+}
+
+#myCarousel .lead {
+  background: #181818;
+  background: rgba(24,24,24,0.75);
+  color: #FFF;
+  font-size: 22px;
+  text-shadow: none;
+  padding: 5px 26px;
+}
+.curly-quote {
+  font-family: georgia, serif;
+}
+
+body {
+  padding-top: 41px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+.brand {
+  background: url(/img/chambers-logo.png) no-repeat top left;
+  width: 294px;
+  height: 40px;
+  padding: 0 !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.navbar .nav {
+  margin-top: 6px;
+}
+
+.overlap {
+  box-shadow: 0 0 15px rgba(0,0,0,0.13);
+  margin-top: -100px;
+  background-color: #fff;
+  position: relative;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+.how-can-we {
+  color: #b8d30b;
+  float: left;
+  font-size: 50px;
+  margin-right: 10px;
+}
