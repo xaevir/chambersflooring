@@ -7674,7 +7674,7 @@ a.badge:hover {
 .carousel-caption {
   background-color: transparent;
   position: static;
-  max-width: 670px;
+  max-width: 750px;
   padding: 0 20px;
   margin-top: 200px;
 }
@@ -7783,4 +7783,8 @@ body {
   float: left;
   font-size: 50px;
   margin-right: 10px;
+}
+.home p {
+  font-size: 30px;
+  line-height: 1.3;
 }
