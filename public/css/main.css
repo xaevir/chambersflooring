@@ -7755,6 +7755,9 @@ body {
   position: relative;
   z-index: 2;
 }
+.navbar .nav > li > a {
+  font-size: 18px;
+}
 .brand {
   background: url(/img/chambers-logo.png) no-repeat top left;
   width: 120px;
@@ -7778,8 +7781,8 @@ body {
 
 }
 .navbar .nav {
-  margin-top: 6px;
-  margin-left: 110px;
+  margin-top: 16px;
+  margin-left: -11px;
 }
 .overlap {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.13);
