@@ -14,3 +14,12 @@ html(lang="en")
   body
     include nav
     block content
+  footer.container
+    .contact-footer.phone
+      p: b Call us at (610) 647-0200
+    .contact-footer.email
+      p: b Email us at info@chambersflooring.com 
+    .copyright
+      - var year = new Date().getFullYear()
+      | Copyright &copy; #{year} Chambers and Sons Flooring, Inc. 
+  

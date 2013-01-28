@@ -10,7 +10,6 @@
 
 
 
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -166,9 +165,40 @@
 }
 
 body {
-  padding-top: 41px; /* 60px to make the container go all the way to the bottom of the topbar */
+  //padding-top: 41px; /* 60px to make the container go all the way to the bottom of the topbar */
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
 }
 
+footer {
+  //margin: 0 auto;
+  //text-align: center;
+  margin-top: 20px;
+  //font-size: 10px;
+  color: #888;
+  //background-color: #222;
+}
+
+.copyright {
+  text-align: center;
+
+}
+
+.contact-footer {
+  padding-left: 60px;
+}
+
+
+.contact-footer.phone {
+  background: url(/img/footer-phone.png) no-repeat top left;
+}
+
+.contact-footer.email {
+  background: url(/img/footer-email.png) no-repeat top left;
+}
+.navbar {
+  margin-bottom: 0;
+}
 .navbar-inner {
   position: relative;
   z-index: 2;
@@ -216,7 +246,13 @@ body {
   position: relative;
   padding: 0 20px;
   padding-top: 20px;
+  padding-bottom: 60px;
 }
+
+.synthetic {
+  margin-top: -200px;
+}
+
 
 .how-can-we {
   color: #b8d30b;
@@ -225,13 +261,33 @@ body {
   margin-right: 10px;
 }
 
-.home p, .home li {
+p, li {
   font-size: 30px;
   line-height: 1.3;
 }
-.home ol {
+ol {
   margin-left: 6em;
 }
 .page-header {
-  margin-top: 4em;
+  //margin-top: 4em;
+}
+
+
+.header img{
+  position: absolute; 
+  max-width: 100%;
+}
+
+.header .super {
+  position: relative;
+  margin-top: 100px;
+  margin-top: 0;
+  margin-left: 300px;
+  padding-top: 100px;
+  font-size: 50px;
+}
+
+
+.header {
+  height: 500px;
 }
