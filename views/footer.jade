@@ -1,0 +1,27 @@
+footer
+  .container-footer
+    ul 
+      li.small-font
+        img(src="/img/chambers-logo.png")
+        | <br /><br />All rights reserved. <br />
+        - var year = new Date().getFullYear()
+        | Copyright &copy; #{year} <br />Chambers and Sons Flooring, Inc. 
+      li
+        |  <span style="color: #b8d30b">Address</span><br />
+        | 323 East King Street<br />
+        | Malvern, PA 19355 <br />
+        | <br />
+        | <span style="color: #b8d30b">Office Hours</span><br />
+        | MON / FRI : 9am - 5pm EST <br />
+      li
+        .contact
+          .contact-footer.phone
+            p Call us at <br />(610) 647-0200
+          .contact-footer.email
+            p Email us at <br />info@chambersflooring.com 
+      li
+        ul
+          li
+            a(href="/") Home
+          include links
+

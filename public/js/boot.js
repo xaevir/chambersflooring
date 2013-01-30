@@ -1,19 +1,24 @@
 require.config({
   paths: {
-    jQuery: '/js/libs/jquery',
-    Underscore: '/js/libs/underscore',
-    Backbone: '/js/libs/backbone',
-    text: '/js/libs/text',
+    jQuery: 'libs/jquery',
+    Underscore: 'libs/underscore',
+    Backbone: 'libs/backbone',
+    'Backbone.Validation': 'libs/backbone.validation',
+    text: 'libs/text',
     templates: '../templates',
-    transition: '/js/libs/bootstrap/js/bootstrap-transition',
-    carousel:   '/js/libs/bootstrap/js/bootstrap-carousel'
+    transition: 'libs/bootstrap/js/bootstrap-transition',
+    carousel:   'libs/bootstrap/js/bootstrap-carousel',
+    utilities: 'libs/utilities'
   },
 
   shim: {
     'Backbone': ['Underscore', 'jQuery'],
+    //'jQuery': { exports: ['$'] },
+    'Backbone.Validation': ['Backbone'],
     'transition': ['jQuery'],
     'carousel': ['transition'],
-    'app': ['Backbone', 'carousel']
+    'utilities': ['jQuery', 'Backbone', 'Backbone.Validation'],
+    'app': ['Backbone', 'carousel', 'Backbone.Validation', 'utilities']
   }
 });
 
