@@ -19,11 +19,11 @@ app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
-  app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
+  app.use(express.logger('dev'));
 });
 
 app.configure('development', function(){
@@ -64,7 +64,7 @@ app.post('/contact', function(req, res, next) {
       html += '<p>message: '+req.body.message+'</p>'
   email(
     {
-      subject: 'New Email!', 
+      subject: 'Website Contact Page', 
       html: html 
     })
     res.send(req.body)
@@ -75,9 +75,9 @@ function email(opts) {
     return console.log(opts.html)
 
   var message = {
-      from: 'Website <contact_page@chambersflooring.com>',
+      from: 'Website Contact Page <contact@chambersflooring.com>',
       // Comma separated list of recipients
-      to: 'bobby.chambers33@gmail.com',
+      to: 'info@chambersflooring.com',
   }
   message.subject = opts.subject
   message.html = opts.html
