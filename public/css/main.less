@@ -175,9 +175,6 @@ h1, h2, h3 {
   line-height: 1.3;
 }
 
-.home h1 {
-}
-
 /* ==========================================================================
    Heading Classes
    ========================================================================== */
@@ -216,7 +213,7 @@ h1, h2, h3 {
 
 body {
   background-color: #f8f8f8;
-  //padding-top: 70px;
+  padding-top: 70px;
 }
 
 .container-footer {
@@ -263,72 +260,33 @@ footer {
   .copyright {
     margin-top: 25px;
   }
-
   .contact { 
-    //float: left;
-    //margin-top: 15px;
     .clearfix;
     margin-bottom: 20px;
   }
-
   .contact-footer {
     padding-left: 47px;
   }
-
   .contact-footer.phone {
     background: url(/img/footer-phone.png) no-repeat top left;
-    //margin-top: 10px;
     margin-bottom: 20px;
     p {
       line-height: 1.4;
-      //font-weight: bold;
-      //font-size: 18px;
     }
   }
-
   .contact-footer.email {
     background: url(/img/footer-email.png) no-repeat top left;
     p {
       line-height: 1.4;
-      //font-weight: bold;
-      //font-size: 18px;
     }
   }
-
 }
 
-
+/* ==========================================================================
+   Navbar 
+   ========================================================================== */
 .navbar {
   margin-bottom: 0;
-}
-
-.navbar .navbar-inner {
-  position: relative;
-  z-index: 2;
-  border: 0;
-  border-bottom: 4px solid #b8d30b !important; 
-  .border-radius(0);
-  .gradient-for-pie(#333, #222); 
-}
-
-.link-highlight {
-  .gradient-for-pie(#666, #111); 
-}
-
-.navbar-inverse .nav > li > a { 
-  color: #aaa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.navbar-inverse .nav .active > a {
-  .link-highlight;
-}
-
-.navbar .nav > li > a {
-  font-size: 16px;
-  &:hover {
-    .link-highlight;
-  }
 }
 
 .navbar .brand {
@@ -346,13 +304,126 @@ footer {
 }
 
 .navbar .nav > li > a {
-  padding: 24px 22px;    
+  padding: 25px 22px;    
 }
 
 .navbar .container {
-  width: 1170px;
+  //width: 1170px;
 }
 
+.navbar .navbar-inner {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  border-bottom: 1px solid #fff !important; 
+  .border-radius(0);
+  //.gradient-for-pie(#333, #222); 
+  .gradient-for-pie(#b8d30b, #acc601); 
+}
+
+.navbar .nav > li > a { 
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .nav .active > a {
+  background-color: #b8d30b;
+  color: #fff;
+}
+
+.navbar .nav > li > a {
+  font-size: 16px;
+  &:hover {
+    color: #fff !important;
+    background-color: #b8d30b;
+  }
+}
+
+
+#installations .navbar .navbar-inner {
+  @color-light: #fc9200;
+  @color-dark: #e58200;
+  .gradient-for-pie(@color-light, @color-dark); 
+  .nav .active > a {
+    background-color: @color-dark;
+  }
+  .nav > li > a {
+    &:hover {
+      background-color: @color-dark;
+    }
+  }
+}
+
+#sanding .navbar .navbar-inner {
+  @color-light: #00B6DE;
+  @color-dark: #00a7c9;
+  .gradient-for-pie(@color-light, @color-dark); 
+  .nav .active > a {
+    background-color: @color-dark;
+  }
+  .nav > li > a {
+    &:hover {
+      background-color: @color-dark;
+    }
+  }
+}
+
+#recoating .navbar .navbar-inner {
+  @color-light: #ffd800;
+  @color-dark: #ffd800;
+  .gradient-for-pie(@color-light, @color-dark); 
+  .nav .active > a {
+    background-color: @color-dark;
+  }
+  .nav > li > a {
+    &:hover {
+      background-color: @color-dark;
+    }
+  }
+}
+
+#synthetic .navbar .navbar-inner {
+  @color-light: #e81123;
+  @color-dark: #d30011;
+  .gradient-for-pie(@color-light, @color-dark); 
+  .nav .active > a {
+    background-color: @color-dark;
+  }
+  .nav > li > a {
+    &:hover {
+      background-color: @color-dark;
+    }
+  }
+}
+
+#references .navbar .navbar-inner {
+  @color-light: #b1005d;
+  @color-dark: #9e0051;
+  .gradient-for-pie(@color-light, @color-dark); 
+  .nav .active > a {
+    background-color: @color-dark;
+  }
+  .nav > li > a {
+    &:hover {
+      background-color: @color-dark;
+    }
+  }
+}
+
+#contact .navbar .navbar-inner {
+  @color-light: #ff1769;
+  @color-dark: #ff1769;
+  .gradient-for-pie(@color-light, @color-dark); 
+  .nav .active > a {
+    background-color: @color-dark;
+  }
+  .nav > li > a {
+    &:hover {
+      background-color: @color-dark;
+    }
+  }
+}
 
 .container-narrow {
   .container;

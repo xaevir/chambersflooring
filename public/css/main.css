@@ -7784,6 +7784,7 @@ h3 {
 }
 body {
   background-color: #f8f8f8;
+  padding-top: 70px;
 }
 .container-footer {
   width: 940px;
@@ -7941,114 +7942,11 @@ footer .contact-footer.email {
 footer .contact-footer.email p {
   line-height: 1.4;
 }
+/* ==========================================================================
+   Navbar 
+   ========================================================================== */
 .navbar {
   margin-bottom: 0;
-}
-.navbar .navbar-inner {
-  position: relative;
-  z-index: 2;
-  border: 0;
-  border-bottom: 4px solid #b8d30b !important;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#333333) to(#222222));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#333333, #222222);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#333333, #222222);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#333333, #222222);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#333333, #222222);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#333333, #222222);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#333333, #222222);
-  /*PIE*/
-
-}
-.link-highlight {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#666666) to(#111111));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#666666, #111111);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#666666, #111111);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#666666, #111111);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#666666, #111111);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#666666, #111111);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#666666, #111111);
-  /*PIE*/
-
-}
-.navbar-inverse .nav > li > a {
-  color: #aaa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.navbar-inverse .nav .active > a {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#666666) to(#111111));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#666666, #111111);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#666666, #111111);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#666666, #111111);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#666666, #111111);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#666666, #111111);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#666666, #111111);
-  /*PIE*/
-
-}
-.navbar .nav > li > a {
-  font-size: 16px;
-}
-.navbar .nav > li > a:hover {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#666666) to(#111111));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#666666, #111111);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#666666, #111111);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#666666, #111111);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#666666, #111111);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#666666, #111111);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#666666, #111111);
-  /*PIE*/
-
 }
 .navbar .brand {
   width: 120px;
@@ -8063,10 +7961,227 @@ footer .contact-footer.email p {
   position: absolute;
 }
 .navbar .nav > li > a {
-  padding: 24px 22px;
+  padding: 25px 22px;
 }
-.navbar .container {
-  width: 1170px;
+.navbar .navbar-inner {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  border-bottom: 1px solid #fff !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#b8d30b) to(#acc601));
+  /*old webkit*/
+
+  background: -webkit-linear-gradient(#b8d30b, #acc601);
+  /*new webkit*/
+
+  background: -moz-linear-gradient(#b8d30b, #acc601);
+  /*gecko*/
+
+  background: -ms-linear-gradient(#b8d30b, #acc601);
+  /*IE10 preview*/
+
+  background: -o-linear-gradient(#b8d30b, #acc601);
+  /*opera 11.10+*/
+
+  background: linear-gradient(#b8d30b, #acc601);
+  /*future CSS3 browsers*/
+
+  -pie-background: linear-gradient(#b8d30b, #acc601);
+  /*PIE*/
+
+}
+.navbar .nav > li > a {
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar .nav .active > a {
+  background-color: #b8d30b;
+  color: #fff;
+}
+.navbar .nav > li > a {
+  font-size: 16px;
+}
+.navbar .nav > li > a:hover {
+  color: #fff !important;
+  background-color: #b8d30b;
+}
+#installations .navbar .navbar-inner {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fc9200) to(#e58200));
+  /*old webkit*/
+
+  background: -webkit-linear-gradient(#fc9200, #e58200);
+  /*new webkit*/
+
+  background: -moz-linear-gradient(#fc9200, #e58200);
+  /*gecko*/
+
+  background: -ms-linear-gradient(#fc9200, #e58200);
+  /*IE10 preview*/
+
+  background: -o-linear-gradient(#fc9200, #e58200);
+  /*opera 11.10+*/
+
+  background: linear-gradient(#fc9200, #e58200);
+  /*future CSS3 browsers*/
+
+  -pie-background: linear-gradient(#fc9200, #e58200);
+  /*PIE*/
+
+}
+#installations .navbar .navbar-inner .nav .active > a {
+  background-color: #e58200;
+}
+#installations .navbar .navbar-inner .nav > li > a:hover {
+  background-color: #e58200;
+}
+#sanding .navbar .navbar-inner {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#00b6de) to(#00a7c9));
+  /*old webkit*/
+
+  background: -webkit-linear-gradient(#00b6de, #00a7c9);
+  /*new webkit*/
+
+  background: -moz-linear-gradient(#00b6de, #00a7c9);
+  /*gecko*/
+
+  background: -ms-linear-gradient(#00b6de, #00a7c9);
+  /*IE10 preview*/
+
+  background: -o-linear-gradient(#00b6de, #00a7c9);
+  /*opera 11.10+*/
+
+  background: linear-gradient(#00b6de, #00a7c9);
+  /*future CSS3 browsers*/
+
+  -pie-background: linear-gradient(#00b6de, #00a7c9);
+  /*PIE*/
+
+}
+#sanding .navbar .navbar-inner .nav .active > a {
+  background-color: #00a7c9;
+}
+#sanding .navbar .navbar-inner .nav > li > a:hover {
+  background-color: #00a7c9;
+}
+#recoating .navbar .navbar-inner {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd800) to(#ffd800));
+  /*old webkit*/
+
+  background: -webkit-linear-gradient(#ffd800, #ffd800);
+  /*new webkit*/
+
+  background: -moz-linear-gradient(#ffd800, #ffd800);
+  /*gecko*/
+
+  background: -ms-linear-gradient(#ffd800, #ffd800);
+  /*IE10 preview*/
+
+  background: -o-linear-gradient(#ffd800, #ffd800);
+  /*opera 11.10+*/
+
+  background: linear-gradient(#ffd800, #ffd800);
+  /*future CSS3 browsers*/
+
+  -pie-background: linear-gradient(#ffd800, #ffd800);
+  /*PIE*/
+
+}
+#recoating .navbar .navbar-inner .nav .active > a {
+  background-color: #ffd800;
+}
+#recoating .navbar .navbar-inner .nav > li > a:hover {
+  background-color: #ffd800;
+}
+#synthetic .navbar .navbar-inner {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e81123) to(#d30011));
+  /*old webkit*/
+
+  background: -webkit-linear-gradient(#e81123, #d30011);
+  /*new webkit*/
+
+  background: -moz-linear-gradient(#e81123, #d30011);
+  /*gecko*/
+
+  background: -ms-linear-gradient(#e81123, #d30011);
+  /*IE10 preview*/
+
+  background: -o-linear-gradient(#e81123, #d30011);
+  /*opera 11.10+*/
+
+  background: linear-gradient(#e81123, #d30011);
+  /*future CSS3 browsers*/
+
+  -pie-background: linear-gradient(#e81123, #d30011);
+  /*PIE*/
+
+}
+#synthetic .navbar .navbar-inner .nav .active > a {
+  background-color: #d30011;
+}
+#synthetic .navbar .navbar-inner .nav > li > a:hover {
+  background-color: #d30011;
+}
+#references .navbar .navbar-inner {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#b1005d) to(#9e0051));
+  /*old webkit*/
+
+  background: -webkit-linear-gradient(#b1005d, #9e0051);
+  /*new webkit*/
+
+  background: -moz-linear-gradient(#b1005d, #9e0051);
+  /*gecko*/
+
+  background: -ms-linear-gradient(#b1005d, #9e0051);
+  /*IE10 preview*/
+
+  background: -o-linear-gradient(#b1005d, #9e0051);
+  /*opera 11.10+*/
+
+  background: linear-gradient(#b1005d, #9e0051);
+  /*future CSS3 browsers*/
+
+  -pie-background: linear-gradient(#b1005d, #9e0051);
+  /*PIE*/
+
+}
+#references .navbar .navbar-inner .nav .active > a {
+  background-color: #9e0051;
+}
+#references .navbar .navbar-inner .nav > li > a:hover {
+  background-color: #9e0051;
+}
+#contact .navbar .navbar-inner {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1769) to(#ff1769));
+  /*old webkit*/
+
+  background: -webkit-linear-gradient(#ff1769, #ff1769);
+  /*new webkit*/
+
+  background: -moz-linear-gradient(#ff1769, #ff1769);
+  /*gecko*/
+
+  background: -ms-linear-gradient(#ff1769, #ff1769);
+  /*IE10 preview*/
+
+  background: -o-linear-gradient(#ff1769, #ff1769);
+  /*opera 11.10+*/
+
+  background: linear-gradient(#ff1769, #ff1769);
+  /*future CSS3 browsers*/
+
+  -pie-background: linear-gradient(#ff1769, #ff1769);
+  /*PIE*/
+
+}
+#contact .navbar .navbar-inner .nav .active > a {
+  background-color: #ff1769;
+}
+#contact .navbar .navbar-inner .nav > li > a:hover {
+  background-color: #ff1769;
 }
 .container-narrow {
   width: 940px;
