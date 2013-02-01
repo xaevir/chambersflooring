@@ -224,10 +224,6 @@ body {
   padding-top: 70px;
 }
 
-.container-footer {
-  .container;
-  width: 960px;
-}
 
 footer {
   @font-color: #eeecdf;
@@ -237,6 +233,10 @@ footer {
   padding-bottom: 20px;
   color: #fff;
   .clearfix;
+  .container {
+    .container;
+    width: 960px;
+  }
   ul {
     list-style: none;
     .clearfix;
@@ -244,7 +244,7 @@ footer {
     margin-left: 0;
   }
   li {
-    //padding: 0 34px 0px;
+    padding: 0 38px 0px;
     float: left;
     font-size: 14px;
     color: @font-color;
@@ -269,24 +269,26 @@ footer {
     margin-top: 25px;
   }
   .contact { 
-    .clearfix;
-    margin-bottom: 20px;
+    //.clearfix;
+    //margin-bottom: 20px;
+    //text-align: center;
   }
-  .contact-footer {
+  .footer-icons {
+    height: 40px;
     padding-left: 47px;
+    height: 40px;
+    //margin-bottom: 15px;
+    //text-align: center;
+    //text-align: left;
   }
-  .contact-footer.phone {
+  .footer-phone {
+    .footer-icons;
     background: url(/img/footer-phone.png) no-repeat top left;
-    margin-bottom: 20px;
-    p {
-      line-height: 1.4;
-    }
+    //&:after { content:"\A"; white-space:pre; }
   }
-  .contact-footer.email {
+  .footer-email {
+    .footer-icons;
     background: url(/img/footer-email.png) no-repeat top left;
-    p {
-      line-height: 1.4;
-    }
   }
 }
 
@@ -575,5 +577,29 @@ form {
     padding-left: 0px;
     padding-right: 0px;
   }
+  footer {
+    .container {
+      width: auto;
+    }
+    li {
+      // from bootstrap
+      float: none;
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      .box-sizing(border-box);
+      // me
+      text-align: center;
+      padding: 0;
+      margin-bottom: 1em;
+    }
+    .contact div{
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 1em;
+    }
+    ul li ul li {
+      margin-bottom: 0;
+    }
+  }
 }
-

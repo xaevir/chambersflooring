@@ -7792,49 +7792,6 @@ body {
   background-color: #f8f8f8;
   padding-top: 70px;
 }
-.container-footer {
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
-  *zoom: 1;
-  width: 960px;
-}
-.container-footer:before,
-.container-footer:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.container-footer:after {
-  clear: both;
-}
-.container-footer:before,
-.container-footer:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.container-footer:after {
-  clear: both;
-}
-.container-footer:before,
-.container-footer:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.container-footer:after {
-  clear: both;
-}
-.container-footer:before,
-.container-footer:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.container-footer:after {
-  clear: both;
-}
 footer {
   margin-top: 50px;
   background-color: #2e2d2c;
@@ -7859,6 +7816,49 @@ footer:after {
   line-height: 0;
 }
 footer:after {
+  clear: both;
+}
+footer .container {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+  width: 960px;
+}
+footer .container:before,
+footer .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+footer .container:after {
+  clear: both;
+}
+footer .container:before,
+footer .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+footer .container:after {
+  clear: both;
+}
+footer .container:before,
+footer .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+footer .container:after {
+  clear: both;
+}
+footer .container:before,
+footer .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+footer .container:after {
   clear: both;
 }
 footer ul {
@@ -7886,6 +7886,7 @@ footer ul:after {
   clear: both;
 }
 footer li {
+  padding: 0 38px 0px;
   float: left;
   font-size: 14px;
   color: #eeecdf;
@@ -7909,43 +7910,19 @@ footer a {
 footer .copyright {
   margin-top: 25px;
 }
-footer .contact {
-  *zoom: 1;
-  margin-bottom: 20px;
-}
-footer .contact:before,
-footer .contact:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-footer .contact:after {
-  clear: both;
-}
-footer .contact:before,
-footer .contact:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-footer .contact:after {
-  clear: both;
-}
-footer .contact-footer {
+footer .footer-icons {
   padding-left: 47px;
+  height: 40px;
 }
-footer .contact-footer.phone {
+footer .footer-phone {
+  padding-left: 47px;
+  height: 40px;
   background: url(/img/footer-phone.png) no-repeat top left;
-  margin-bottom: 20px;
 }
-footer .contact-footer.phone p {
-  line-height: 1.4;
-}
-footer .contact-footer.email {
+footer .footer-email {
+  padding-left: 47px;
+  height: 40px;
   background: url(/img/footer-email.png) no-repeat top left;
-}
-footer .contact-footer.email p {
-  line-height: 1.4;
 }
 /* ==========================================================================
    Navbar 
@@ -8405,5 +8382,28 @@ form span.error {
   body {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  footer .container {
+    width: auto;
+  }
+  footer li {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  footer .contact div {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  footer ul li ul li {
+    margin-bottom: 0;
   }
 }
