@@ -7618,6 +7618,12 @@ a.badge:hover {
   src: url("/fonts/SinaNova/SinaNova.eot");
   src: url("/fonts/SinaNova/SinaNova.eot?#iefix") format('embedded-opentype'), url("/fonts/SinaNova/SinaNova.woff") format('woff'), url("/fonts/SinaNova/SinaNova.ttf") format('truetype'), url("/fonts/SinaNova/SinaNova.svg#") format('svg');
 }
+[class^="icon-"] {
+  background-image: url(/js/libs/bootstrap/img/glyphicons-halflings.png);
+}
+.icon-white {
+  background-image: url(/js/libs/bootstrap/img/glyphicons-halflings-white.png);
+}
 .bg {
   background: url(/img/at-the-board.jpg) no-repeat top center;
   height: 750px;
@@ -7880,7 +7886,6 @@ footer ul:after {
   clear: both;
 }
 footer li {
-  padding: 0 34px 0px;
   float: left;
   font-size: 14px;
   color: #eeecdf;
@@ -8091,6 +8096,7 @@ footer .contact-footer.email p {
 
 }
 #recoating .navbar .navbar-inner .nav .active > a {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #ffd800;
 }
 #recoating .navbar .navbar-inner .nav > li > a:hover {
@@ -8239,10 +8245,6 @@ footer .contact-footer.email p {
 .overlap.home {
   margin-top: -200px;
 }
-.header img {
-  position: absolute;
-  max-width: 100%;
-}
 .header .super {
   position: relative;
   padding-top: 100px;
@@ -8251,9 +8253,6 @@ footer .contact-footer.email p {
 }
 .header.sanding .super {
   padding-top: 200px;
-}
-.header {
-  height: 500px;
 }
 #alert {
   position: fixed;
@@ -8306,10 +8305,10 @@ footer .contact-footer.email p {
   height: 150px;
   width: 300px;
 }
-#contact p {
+#contact .body p {
   font-size: 28px;
 }
-#contact b {
+#contact .body b {
   font-size: 24px;
 }
 form span.error {

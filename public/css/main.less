@@ -3,6 +3,14 @@
 // Fonts
 @import "fonts.less";
 
+[class^="icon-"]{
+  background-image: url(/js/libs/bootstrap/img/glyphicons-halflings.png);
+}
+.icon-white {
+  background-image: url(/js/libs/bootstrap/img/glyphicons-halflings-white.png);
+}
+
+
 .bg {
   background: url(/img/at-the-board.jpg) no-repeat top center;
   height: 750px;
@@ -236,7 +244,7 @@ footer {
     margin-left: 0;
   }
   li {
-    padding: 0 34px 0px;
+    //padding: 0 34px 0px;
     float: left;
     font-size: 14px;
     color: @font-color;
@@ -374,6 +382,7 @@ footer {
   @color-dark: #ffd800;
   .gradient-for-pie(@color-light, @color-dark); 
   .nav .active > a {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     background-color: @color-dark;
   }
   .nav > li > a {
@@ -443,8 +452,8 @@ footer {
 
 
 .header img{
-  position: absolute; 
-  max-width: 100%;
+  //position: absolute; 
+  //max-width: 100%;
 }
 
 .header .super {
@@ -459,7 +468,7 @@ footer {
 }
 
 .header {
-  height: 500px;
+  //height: 500px;
 }
 
 #alert {
@@ -512,11 +521,13 @@ footer {
     height: 150px;
     width: 300px;
   }
-  p {
-    font-size: 28px;
-  }
-  b {
-    font-size: 24px;
+  .body {
+    p {
+      font-size: 28px;
+    }
+    b {
+      font-size: 24px;
+    }
   }
 }
 
