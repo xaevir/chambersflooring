@@ -12,10 +12,13 @@ define(function(require) {
       this.activePage(page)
       if (page === 'contact')
         this.contact()
+      if (page === '')
+        this.index()
+
     },
 
     routes: {
-      "": "index",
+      //"": "index",
     },
 
     changeView: function(view) {

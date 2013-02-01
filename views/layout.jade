@@ -16,7 +16,11 @@ html(lang="en")
     //if lt IE 8
       script 
         alert("Sorry, but your browser is not supported. Please use another browser or upgrade for a better experience. Thanks!")
-    script(data-main='js/main-built', src='/js/libs/require.js')
+
+    if locals.env === 'production'
+      script(data-main='js/main-built', src='/js/libs/require.js')
+    else
+      script(data-main='js/boot', src='/js/libs/require.js')
   body(id="#{page}")
     include nav
     #notification

@@ -452,23 +452,25 @@ footer {
 
 
 .header img{
-  //position: absolute; 
+  position: absolute; 
   //max-width: 100%;
 }
 
-.header .super {
-  position: relative;
-  padding-top: 100px;
-  float: right;
-  font-size: 50px;
+.header { 
+  height: 500px;
+  .super {
+    position: relative;
+    padding-top: 100px;
+    float: right;
+    font-size: 50px;
+  }
+  .container {
+    //position: relative;
+  }
 }
 
 .header.sanding .super {
   padding-top: 200px;
-}
-
-.header {
-  //height: 500px;
 }
 
 #alert {
@@ -561,5 +563,16 @@ form {
 .modal-backdrop,
 .modal-backdrop.fade.in {
   .opacity(50);
+}
+
+
+/* ==========================================================================
+   Responsive 
+   ========================================================================== */
+@media (max-width: 767px) {
+  body {
+    // overide bootstrap 
+    padding-left: 0px;
+    padding-right: 0px;
 }
 

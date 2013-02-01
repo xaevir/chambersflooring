@@ -26,8 +26,15 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
+var locals = {}
+
 app.configure('development', function(){
   app.use(express.errorHandler());
+  locals.env = 'development'
+});
+
+app.configure('production', function(){
+  locals.env = 'production'
 });
 
 app.get('/', function(req, res) {
@@ -35,7 +42,9 @@ app.get('/', function(req, res) {
 })
 
 app.get('/new-installations-and-retrofitting', function(req, res) {
-  res.render('new-installations-and-retrofitting', { title: 'New Installations and Retrofitting', page: 'installations'});
+  locals.title ='New Installations and Retrofitting'
+  locals.page = 'installations'
+  res.render('new-installations-and-retrofitting', locals);
 })
 
 app.get('/annual-recoating', function(req, res) {
