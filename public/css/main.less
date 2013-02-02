@@ -327,8 +327,6 @@ footer {
   border: 0;
   border-bottom: 1px solid #fff !important; 
   .border-radius(0);
-  //.gradient-for-pie(#333, #222); 
-  .gradient-for-pie(#b8d30b, #acc601); 
 }
 
 .navbar .nav > li > a { 
@@ -338,7 +336,6 @@ footer {
 }
 
 .navbar .nav .active > a {
-  background-color: #b8d30b;
   color: #fff;
 }
 
@@ -346,9 +343,23 @@ footer {
   font-size: 16px;
   &:hover {
     color: #fff !important;
-    background-color: #b8d30b;
   }
 }
+
+#home .navbar .navbar-inner {
+  @color-light: #b8d30b;
+  @color-dark: #acc601;
+  .gradient-for-pie(@color-light, @color-dark); 
+  .nav .active > a {
+    background-color: @color-dark;
+  }
+  .nav > li > a {
+    &:hover {
+      background-color: @color-dark;
+    }
+  }
+}
+
 
 
 #installations .navbar .navbar-inner {
@@ -452,14 +463,13 @@ footer {
   margin-top: -200px;
 }
 
-
-.header img{
-  position: absolute; 
-  //max-width: 100%;
-}
-
 .header { 
   height: 500px;
+  overflow: hidden;
+  position: relative;
+  img{
+    position: absolute; 
+  }
   .super {
     position: relative;
     padding-top: 100px;

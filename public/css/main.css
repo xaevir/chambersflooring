@@ -7953,6 +7953,22 @@ footer .footer-email {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.navbar .nav > li > a {
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar .nav .active > a {
+  color: #fff;
+}
+.navbar .nav > li > a {
+  font-size: 16px;
+}
+.navbar .nav > li > a:hover {
+  color: #fff !important;
+}
+#home .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#b8d30b) to(#acc601));
   /*old webkit*/
 
@@ -7975,21 +7991,11 @@ footer .footer-email {
   /*PIE*/
 
 }
-.navbar .nav > li > a {
-  color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+#home .navbar .navbar-inner .nav .active > a {
+  background-color: #acc601;
 }
-.navbar .nav .active > a {
-  background-color: #b8d30b;
-  color: #fff;
-}
-.navbar .nav > li > a {
-  font-size: 16px;
-}
-.navbar .nav > li > a:hover {
-  color: #fff !important;
-  background-color: #b8d30b;
+#home .navbar .navbar-inner .nav > li > a:hover {
+  background-color: #acc601;
 }
 #installations .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fc9200) to(#e58200));
@@ -8222,11 +8228,13 @@ footer .footer-email {
 .overlap.home {
   margin-top: -200px;
 }
-.header img {
-  position: absolute;
-}
 .header {
   height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.header img {
+  position: absolute;
 }
 .header .super {
   position: relative;
