@@ -297,15 +297,20 @@ footer {
    ========================================================================== */
 .navbar {
   margin-bottom: 0;
+  .btn-navbar {
+    .buttonBackground(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
+    padding: 22px 26px;
+  }
+
 }
+
 
 .navbar .brand {
   //background: url(/img/chambers-logo.png) no-repeat top left;
-  width: 120px;
-  height: 60px;
-  padding: 0 !important;
+  width: 109px;
+  height: 58px;
+  padding: 5px 7px !important;
   margin: 0 !important;
-  padding-top: 5px !important;
   span {
     text-indent: -9999px;
     display: block;
@@ -315,10 +320,6 @@ footer {
 
 .navbar .nav > li > a {
   padding: 25px 22px;    
-}
-
-.navbar .container {
-  //width: 1170px;
 }
 
 .navbar .navbar-inner {
@@ -350,13 +351,16 @@ footer {
   @color-light: #b8d30b;
   @color-dark: #acc601;
   .gradient-for-pie(@color-light, @color-dark); 
-  .nav .active > a {
+  .nav .active > a, .brand {
     background-color: @color-dark;
   }
-  .nav > li > a {
+  .nav > li > a, .brand {
     &:hover {
       background-color: @color-dark;
     }
+  }
+  .btn-navbar {
+    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
   }
 }
 
@@ -374,6 +378,10 @@ footer {
       background-color: @color-dark;
     }
   }
+  .btn-navbar {
+    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
+  }
+
 }
 
 #sanding .navbar .navbar-inner {
@@ -387,6 +395,9 @@ footer {
     &:hover {
       background-color: @color-dark;
     }
+  }
+  .btn-navbar {
+    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
   }
 }
 
@@ -403,6 +414,9 @@ footer {
       background-color: @color-dark;
     }
   }
+  .btn-navbar {
+    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
+  }
 }
 
 #synthetic .navbar .navbar-inner {
@@ -416,6 +430,9 @@ footer {
     &:hover {
       background-color: @color-dark;
     }
+  }
+  .btn-navbar {
+    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
   }
 }
 
@@ -431,6 +448,9 @@ footer {
       background-color: @color-dark;
     }
   }
+  .btn-navbar {
+    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
+  }
 }
 
 #contact .navbar .navbar-inner {
@@ -444,6 +464,9 @@ footer {
     &:hover {
       background-color: @color-dark;
     }
+  }
+  .btn-navbar {
+    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
   }
 }
 
@@ -613,3 +636,12 @@ form {
     }
   }
 }
+
+// there is a specific rule for navbar collapse defined in the variables file
+@media (max-width: @navbarCollapseWidth) {
+  body {
+    padding-top: 0px;
+  }
+
+}
+

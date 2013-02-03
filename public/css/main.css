@@ -7930,12 +7930,56 @@ footer .footer-email {
 .navbar {
   margin-bottom: 0;
 }
+.navbar .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0e0e0e;
+  background-image: -moz-linear-gradient(top, #151515, #040404);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#040404));
+  background-image: -webkit-linear-gradient(top, #151515, #040404);
+  background-image: -o-linear-gradient(top, #151515, #040404);
+  background-image: linear-gradient(to bottom, #151515, #040404);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
+  border-color: #040404 #040404 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #040404;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  padding: 22px 26px;
+}
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #040404;
+  *background-color: #000000;
+}
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active {
+  background-color: #000000 \9;
+}
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #040404;
+  *background-color: #000000;
+}
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active {
+  background-color: #000000 \9;
+}
 .navbar .brand {
-  width: 120px;
-  height: 60px;
-  padding: 0 !important;
+  width: 109px;
+  height: 58px;
+  padding: 5px 7px !important;
   margin: 0 !important;
-  padding-top: 5px !important;
 }
 .navbar .brand span {
   text-indent: -9999px;
@@ -7991,11 +8035,57 @@ footer .footer-email {
   /*PIE*/
 
 }
-#home .navbar .navbar-inner .nav .active > a {
+#home .navbar .navbar-inner .nav .active > a,
+#home .navbar .navbar-inner .brand {
   background-color: #acc601;
 }
-#home .navbar .navbar-inner .nav > li > a:hover {
+#home .navbar .navbar-inner .nav > li > a:hover,
+#home .navbar .navbar-inner .brand:hover {
   background-color: #acc601;
+}
+#home .navbar .navbar-inner .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #96ad01;
+  background-image: -moz-linear-gradient(top, #96ad01, #96ad01);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#96ad01), to(#96ad01));
+  background-image: -webkit-linear-gradient(top, #96ad01, #96ad01);
+  background-image: -o-linear-gradient(top, #96ad01, #96ad01);
+  background-image: linear-gradient(to bottom, #96ad01, #96ad01);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff96ad01', endColorstr='#ff96ad01', GradientType=0);
+  border-color: #96ad01 #96ad01 #546100;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #96ad01;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#home .navbar .navbar-inner .btn-navbar:hover,
+#home .navbar .navbar-inner .btn-navbar:active,
+#home .navbar .navbar-inner .btn-navbar.active,
+#home .navbar .navbar-inner .btn-navbar.disabled,
+#home .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #96ad01;
+  *background-color: #809301;
+}
+#home .navbar .navbar-inner .btn-navbar:active,
+#home .navbar .navbar-inner .btn-navbar.active {
+  background-color: #6a7a01 \9;
+}
+#home .navbar .navbar-inner .btn-navbar:hover,
+#home .navbar .navbar-inner .btn-navbar:active,
+#home .navbar .navbar-inner .btn-navbar.active,
+#home .navbar .navbar-inner .btn-navbar.disabled,
+#home .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #96ad01;
+  *background-color: #809301;
+}
+#home .navbar .navbar-inner .btn-navbar:active,
+#home .navbar .navbar-inner .btn-navbar.active {
+  background-color: #6a7a01 \9;
 }
 #installations .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fc9200) to(#e58200));
@@ -8026,6 +8116,50 @@ footer .footer-email {
 #installations .navbar .navbar-inner .nav > li > a:hover {
   background-color: #e58200;
 }
+#installations .navbar .navbar-inner .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #cc7400;
+  background-image: -moz-linear-gradient(top, #cc7400, #cc7400);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc7400), to(#cc7400));
+  background-image: -webkit-linear-gradient(top, #cc7400, #cc7400);
+  background-image: -o-linear-gradient(top, #cc7400, #cc7400);
+  background-image: linear-gradient(to bottom, #cc7400, #cc7400);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc7400', endColorstr='#ffcc7400', GradientType=0);
+  border-color: #cc7400 #cc7400 #7f4800;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #cc7400;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#installations .navbar .navbar-inner .btn-navbar:hover,
+#installations .navbar .navbar-inner .btn-navbar:active,
+#installations .navbar .navbar-inner .btn-navbar.active,
+#installations .navbar .navbar-inner .btn-navbar.disabled,
+#installations .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #cc7400;
+  *background-color: #b26500;
+}
+#installations .navbar .navbar-inner .btn-navbar:active,
+#installations .navbar .navbar-inner .btn-navbar.active {
+  background-color: #995700 \9;
+}
+#installations .navbar .navbar-inner .btn-navbar:hover,
+#installations .navbar .navbar-inner .btn-navbar:active,
+#installations .navbar .navbar-inner .btn-navbar.active,
+#installations .navbar .navbar-inner .btn-navbar.disabled,
+#installations .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #cc7400;
+  *background-color: #b26500;
+}
+#installations .navbar .navbar-inner .btn-navbar:active,
+#installations .navbar .navbar-inner .btn-navbar.active {
+  background-color: #995700 \9;
+}
 #sanding .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#00b6de) to(#00a7c9));
   /*old webkit*/
@@ -8054,6 +8188,50 @@ footer .footer-email {
 }
 #sanding .navbar .navbar-inner .nav > li > a:hover {
   background-color: #00a7c9;
+}
+#sanding .navbar .navbar-inner .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0092b0;
+  background-image: -moz-linear-gradient(top, #0092b0, #0092b0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0092b0), to(#0092b0));
+  background-image: -webkit-linear-gradient(top, #0092b0, #0092b0);
+  background-image: -o-linear-gradient(top, #0092b0, #0092b0);
+  background-image: linear-gradient(to bottom, #0092b0, #0092b0);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0092b0', endColorstr='#ff0092b0', GradientType=0);
+  border-color: #0092b0 #0092b0 #005263;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0092b0;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#sanding .navbar .navbar-inner .btn-navbar:hover,
+#sanding .navbar .navbar-inner .btn-navbar:active,
+#sanding .navbar .navbar-inner .btn-navbar.active,
+#sanding .navbar .navbar-inner .btn-navbar.disabled,
+#sanding .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #0092b0;
+  *background-color: #007d96;
+}
+#sanding .navbar .navbar-inner .btn-navbar:active,
+#sanding .navbar .navbar-inner .btn-navbar.active {
+  background-color: #00677d \9;
+}
+#sanding .navbar .navbar-inner .btn-navbar:hover,
+#sanding .navbar .navbar-inner .btn-navbar:active,
+#sanding .navbar .navbar-inner .btn-navbar.active,
+#sanding .navbar .navbar-inner .btn-navbar.disabled,
+#sanding .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #0092b0;
+  *background-color: #007d96;
+}
+#sanding .navbar .navbar-inner .btn-navbar:active,
+#sanding .navbar .navbar-inner .btn-navbar.active {
+  background-color: #00677d \9;
 }
 #recoating .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd800) to(#ffd800));
@@ -8085,6 +8263,50 @@ footer .footer-email {
 #recoating .navbar .navbar-inner .nav > li > a:hover {
   background-color: #ffd800;
 }
+#recoating .navbar .navbar-inner .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #e6c200;
+  background-image: -moz-linear-gradient(top, #e6c200, #e6c200);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6c200), to(#e6c200));
+  background-image: -webkit-linear-gradient(top, #e6c200, #e6c200);
+  background-image: -o-linear-gradient(top, #e6c200, #e6c200);
+  background-image: linear-gradient(to bottom, #e6c200, #e6c200);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe6c200', endColorstr='#ffe6c200', GradientType=0);
+  border-color: #e6c200 #e6c200 #998200;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6c200;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#recoating .navbar .navbar-inner .btn-navbar:hover,
+#recoating .navbar .navbar-inner .btn-navbar:active,
+#recoating .navbar .navbar-inner .btn-navbar.active,
+#recoating .navbar .navbar-inner .btn-navbar.disabled,
+#recoating .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #e6c200;
+  *background-color: #ccad00;
+}
+#recoating .navbar .navbar-inner .btn-navbar:active,
+#recoating .navbar .navbar-inner .btn-navbar.active {
+  background-color: #b39700 \9;
+}
+#recoating .navbar .navbar-inner .btn-navbar:hover,
+#recoating .navbar .navbar-inner .btn-navbar:active,
+#recoating .navbar .navbar-inner .btn-navbar.active,
+#recoating .navbar .navbar-inner .btn-navbar.disabled,
+#recoating .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #e6c200;
+  *background-color: #ccad00;
+}
+#recoating .navbar .navbar-inner .btn-navbar:active,
+#recoating .navbar .navbar-inner .btn-navbar.active {
+  background-color: #b39700 \9;
+}
 #synthetic .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#e81123) to(#d30011));
   /*old webkit*/
@@ -8113,6 +8335,50 @@ footer .footer-email {
 }
 #synthetic .navbar .navbar-inner .nav > li > a:hover {
   background-color: #d30011;
+}
+#synthetic .navbar .navbar-inner .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ba000f;
+  background-image: -moz-linear-gradient(top, #ba000f, #ba000f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ba000f), to(#ba000f));
+  background-image: -webkit-linear-gradient(top, #ba000f, #ba000f);
+  background-image: -o-linear-gradient(top, #ba000f, #ba000f);
+  background-image: linear-gradient(to bottom, #ba000f, #ba000f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffba000f', endColorstr='#ffba000f', GradientType=0);
+  border-color: #ba000f #ba000f #6d0009;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #ba000f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#synthetic .navbar .navbar-inner .btn-navbar:hover,
+#synthetic .navbar .navbar-inner .btn-navbar:active,
+#synthetic .navbar .navbar-inner .btn-navbar.active,
+#synthetic .navbar .navbar-inner .btn-navbar.disabled,
+#synthetic .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #ba000f;
+  *background-color: #a0000d;
+}
+#synthetic .navbar .navbar-inner .btn-navbar:active,
+#synthetic .navbar .navbar-inner .btn-navbar.active {
+  background-color: #86000b \9;
+}
+#synthetic .navbar .navbar-inner .btn-navbar:hover,
+#synthetic .navbar .navbar-inner .btn-navbar:active,
+#synthetic .navbar .navbar-inner .btn-navbar.active,
+#synthetic .navbar .navbar-inner .btn-navbar.disabled,
+#synthetic .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #ba000f;
+  *background-color: #a0000d;
+}
+#synthetic .navbar .navbar-inner .btn-navbar:active,
+#synthetic .navbar .navbar-inner .btn-navbar.active {
+  background-color: #86000b \9;
 }
 #references .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#b1005d) to(#9e0051));
@@ -8143,6 +8409,50 @@ footer .footer-email {
 #references .navbar .navbar-inner .nav > li > a:hover {
   background-color: #9e0051;
 }
+#references .navbar .navbar-inner .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #850044;
+  background-image: -moz-linear-gradient(top, #850044, #850044);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#850044), to(#850044));
+  background-image: -webkit-linear-gradient(top, #850044, #850044);
+  background-image: -o-linear-gradient(top, #850044, #850044);
+  background-image: linear-gradient(to bottom, #850044, #850044);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff850044', endColorstr='#ff850044', GradientType=0);
+  border-color: #850044 #850044 #38001d;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #850044;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#references .navbar .navbar-inner .btn-navbar:hover,
+#references .navbar .navbar-inner .btn-navbar:active,
+#references .navbar .navbar-inner .btn-navbar.active,
+#references .navbar .navbar-inner .btn-navbar.disabled,
+#references .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #850044;
+  *background-color: #6b0037;
+}
+#references .navbar .navbar-inner .btn-navbar:active,
+#references .navbar .navbar-inner .btn-navbar.active {
+  background-color: #52002a \9;
+}
+#references .navbar .navbar-inner .btn-navbar:hover,
+#references .navbar .navbar-inner .btn-navbar:active,
+#references .navbar .navbar-inner .btn-navbar.active,
+#references .navbar .navbar-inner .btn-navbar.disabled,
+#references .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #850044;
+  *background-color: #6b0037;
+}
+#references .navbar .navbar-inner .btn-navbar:active,
+#references .navbar .navbar-inner .btn-navbar.active {
+  background-color: #52002a \9;
+}
 #contact .navbar .navbar-inner {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1769) to(#ff1769));
   /*old webkit*/
@@ -8171,6 +8481,50 @@ footer .footer-email {
 }
 #contact .navbar .navbar-inner .nav > li > a:hover {
   background-color: #ff1769;
+}
+#contact .navbar .navbar-inner .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fc0059;
+  background-image: -moz-linear-gradient(top, #fc0059, #fc0059);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fc0059), to(#fc0059));
+  background-image: -webkit-linear-gradient(top, #fc0059, #fc0059);
+  background-image: -o-linear-gradient(top, #fc0059, #fc0059);
+  background-image: linear-gradient(to bottom, #fc0059, #fc0059);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffc0059', endColorstr='#fffc0059', GradientType=0);
+  border-color: #fc0059 #fc0059 #b0003e;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #fc0059;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#contact .navbar .navbar-inner .btn-navbar:hover,
+#contact .navbar .navbar-inner .btn-navbar:active,
+#contact .navbar .navbar-inner .btn-navbar.active,
+#contact .navbar .navbar-inner .btn-navbar.disabled,
+#contact .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #fc0059;
+  *background-color: #e30050;
+}
+#contact .navbar .navbar-inner .btn-navbar:active,
+#contact .navbar .navbar-inner .btn-navbar.active {
+  background-color: #c90047 \9;
+}
+#contact .navbar .navbar-inner .btn-navbar:hover,
+#contact .navbar .navbar-inner .btn-navbar:active,
+#contact .navbar .navbar-inner .btn-navbar.active,
+#contact .navbar .navbar-inner .btn-navbar.disabled,
+#contact .navbar .navbar-inner .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #fc0059;
+  *background-color: #e30050;
+}
+#contact .navbar .navbar-inner .btn-navbar:active,
+#contact .navbar .navbar-inner .btn-navbar.active {
+  background-color: #c90047 \9;
 }
 .container-narrow {
   width: 940px;
@@ -8413,5 +8767,10 @@ form span.error {
   }
   footer ul li ul li {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
   }
 }

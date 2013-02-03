@@ -8,6 +8,7 @@ require.config({
     templates: '../templates',
     transition: 'libs/bootstrap/js/bootstrap-transition',
     carousel:   'libs/bootstrap/js/bootstrap-carousel',
+    collapse: 'libs/bootstrap/js/bootstrap-collapse',
     utilities: 'libs/utilities'
   },
 
@@ -16,9 +17,10 @@ require.config({
     //'jQuery': { exports: ['$'] },
     'Backbone.Validation': ['Backbone'],
     'transition': ['jQuery'],
+    'collapse' : ['jQuery'],
     'carousel': ['transition'],
     'utilities': ['jQuery', 'Backbone', 'Backbone.Validation'],
-    'app': ['Backbone', 'carousel', 'Backbone.Validation', 'utilities']
+    'app': ['Backbone', 'carousel', 'Backbone.Validation', 'utilities', 'collapse']
   }
 });
 
