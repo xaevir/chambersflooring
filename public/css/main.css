@@ -7700,7 +7700,6 @@ a.badge:hover {
   }
   .carousel img {
     width: auto;
-    height: 500px;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -8595,9 +8594,6 @@ footer .footer-email {
   padding-top: 100px;
   float: right;
   font-size: 50px;
-}
-.header.sanding .super {
-  padding-top: 200px;
 }
 #alert {
   position: fixed;
