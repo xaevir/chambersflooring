@@ -7609,7 +7609,7 @@ a.badge:hover {
   }
 }
 @font-face {
-  font-family: 'Nexa';
+  font-family: 'Nexa-Bold';
   src: url("/fonts/Nexa-Bold/Nexa-Bold.eot");
   src: url("/fonts/Nexa-Bold/Nexa-Bold.eot?#iefix") format('embedded-opentype'), url("/fonts/Nexa-Bold/Nexa-Bold.woff") format('woff'), url("/fonts/Nexa-Bold/Nexa-Bold.ttf") format('truetype'), url("/fonts/Nexa-Bold/Nexa-Bold.svg#") format('svg');
 }
@@ -7746,12 +7746,11 @@ h3 {
    Heading Classes
    ========================================================================== */
 .super {
-  font-family: Nexa, Arial, sans-serif;
+  font-family: Nexa-Bold, Arial, sans-serif;
   color: #fff;
   font-size: 60px;
   line-height: 1.4 !important;
   margin-bottom: 12px !important;
-  font-weight: bold;
   text-shadow: none !important;
 }
 .highlight-green {
@@ -7768,7 +7767,7 @@ h3 {
   background: #fff;
 }
 #myCarousel .lead {
-  font-family: Nexa, Arial, sans-serif !important;
+  font-family: Nexa-Bold, Arial, sans-serif !important;
   color: #FFF;
   font-size: 22px;
   text-shadow: none;
