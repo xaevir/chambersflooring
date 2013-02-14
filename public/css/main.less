@@ -109,45 +109,6 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-/* Portrait tablet to landscape and desktop */
-@media (max-width: 979px) {
-  .carousel .item {
-    //height: 500px;
-  }
-  .carousel img {
-    width: auto;
-    //height: 500px;
-  }
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  .carousel {
-    //margin-left: -20px;
-    //margin-right: -20px;
-  }
-  .carousel .container {
-
-  }
-  .carousel .item {
-    //height: 300px;
-  }
-  .carousel img {
-    //height: 300px;
-  }
-  .carousel-caption {
-    width: 65%;
-    padding: 0 70px;
-    margin-top: 100px;
-  }
-  .carousel-caption h1 {
-    font-size: 30px;
-  }
-  .carousel-caption .lead,
-  .carousel-caption .btn {
-    font-size: 18px;
-  }
-}
 
 /* ==========================================================================
    Fonts 
@@ -597,29 +558,46 @@ form {
   h2 {
     font-size: 24px;
   }
-/*
-  .header {
-    height: auto;
-    img {
-      //position: static;
-      //display: block;
+  #myCarousel {
+    position: relative;
+    .item {
+      height: auto;
     }
-    .super {
-      font-size: 20px;
-      //margin-top: 0px;
-      //float: none;
-      //position: static;
-      line-height: 1.2 !important;
-      margin: 0px !important;
-      .highlight-green;
+    img {
+      position: static;
+    }
+  }
+  .carousel {
+    margin-bottom: 0;
+    .carousel-inner {
+      position: static;
+    }
+    .container {
+      position: static;
+    }
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 10px;
+    margin-top: 0;
+    h1 {
+      font-size: 24px;
       span {
-        padding: 0;
-        //background: transparent;
+        padding: 0 5px;
+      }
+    }
+    .lead {
+      font-size: 18px !important;
+      span {
+        padding: 0 5px;
+        line-height: 1.4;
       }
     }
   }
-  */
-  .overlap {
+  .carousel-control {
+    top: 50%;
+  }
+  .overlap, #home .overlap {
     margin-top: 0;
   }
   p, li {
