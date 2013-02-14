@@ -534,6 +534,7 @@ form {
    width: auto;
   }
   footer {
+    maring-top: 0;
     .container {
       width: auto;
     }
@@ -565,22 +566,59 @@ form {
     height: auto;
     img {
       position: static;
-      display: block;
+      //display: block;
     }
     .super {
-      font-size: 36px;
-      margin-top: 0px;
-      float: none;
-      position: static;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      margin-top: 5%;
+      line-height: 1 !important;
+      span {
+        padding: 0 5px;
+        //background: transparent;
+      }
+    }
+  }
+  .page-header {
+    h1 {
+      font-size: 34px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+  }
+  footer {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 24px;
+  }
+/*
+  .header {
+    height: auto;
+    img {
+      //position: static;
+      //display: block;
+    }
+    .super {
+      font-size: 20px;
+      //margin-top: 0px;
+      //float: none;
+      //position: static;
       line-height: 1.2 !important;
       margin: 0px !important;
       .highlight-green;
       span {
         padding: 0;
-        background: transparent;
+        //background: transparent;
       }
     }
   }
+  */
   .overlap {
     margin-top: 0;
   }

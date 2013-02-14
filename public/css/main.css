@@ -8385,6 +8385,9 @@ form span.error {
   .container-narrow {
     width: auto;
   }
+  footer {
+    maring-top: 0;
+  }
   footer .container {
     width: auto;
   }
@@ -8415,23 +8418,54 @@ form span.error {
   }
   .header img {
     position: static;
-    display: block;
   }
   .header .super {
-    font-size: 36px;
-    margin-top: 0px;
-    float: none;
-    position: static;
-    line-height: 1.2 !important;
-    margin: 0px !important;
-    background: #b8d30b;
-    background: rgba(184, 211, 11, 0.75);
-    padding: 14px 20px 6px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    line-height: 1 !important;
   }
   .header .super span {
-    padding: 0;
-    background: transparent;
+    padding: 0 5px;
   }
+  .page-header h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+  footer {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  /*
+    .header {
+      height: auto;
+      img {
+        //position: static;
+        //display: block;
+      }
+      .super {
+        font-size: 20px;
+        //margin-top: 0px;
+        //float: none;
+        //position: static;
+        line-height: 1.2 !important;
+        margin: 0px !important;
+        .highlight-green;
+        span {
+          padding: 0;
+          //background: transparent;
+        }
+      }
+    }
+    */
   .overlap {
     margin-top: 0;
   }
