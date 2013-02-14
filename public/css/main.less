@@ -113,7 +113,7 @@
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {
   .carousel .item {
-    height: 500px;
+    //height: 500px;
   }
   .carousel img {
     width: auto;
@@ -124,17 +124,17 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   .carousel {
-    margin-left: -20px;
-    margin-right: -20px;
+    //margin-left: -20px;
+    //margin-right: -20px;
   }
   .carousel .container {
 
   }
   .carousel .item {
-    height: 300px;
+    //height: 300px;
   }
   .carousel img {
-    height: 300px;
+    //height: 300px;
   }
   .carousel-caption {
     width: 65%;
@@ -347,116 +347,10 @@ footer {
   }
 }
 
-#home .navbar .navbar-inner {
-  @color-light: #b8d30b;
-  @color-dark: #acc601;
-  .gradient-for-pie(@color-light, @color-dark); 
-  .nav .active > a, .brand {
-    background-color: @color-dark;
-  }
-  .nav > li > a, .brand {
-    &:hover {
-      background-color: @color-dark;
-    }
-  }
-  .btn-navbar {
-    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
-  }
-}
-
-
-
-#installations .navbar .navbar-inner {
-  @color-light: #fc9200;
-  @color-dark: #e58200;
-  .gradient-for-pie(@color-light, @color-dark); 
-  .nav .active > a {
-    background-color: @color-dark;
-  }
-  .nav > li > a {
-    &:hover {
-      background-color: @color-dark;
-    }
-  }
-  .btn-navbar {
-    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
-  }
-
-}
-
-#sanding .navbar .navbar-inner {
-  @color-light: #00B6DE;
-  @color-dark: #00a7c9;
-  .gradient-for-pie(@color-light, @color-dark); 
-  .nav .active > a {
-    background-color: @color-dark;
-  }
-  .nav > li > a {
-    &:hover {
-      background-color: @color-dark;
-    }
-  }
-  .btn-navbar {
-    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
-  }
-}
-
-#recoating .navbar .navbar-inner {
-  @color-light: #ffd800;
-  @color-dark: #ffd800;
-  .gradient-for-pie(@color-light, @color-dark); 
-  .nav .active > a {
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    background-color: @color-dark;
-  }
-  .nav > li > a {
-    &:hover {
-      background-color: @color-dark;
-    }
-  }
-  .btn-navbar {
-    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
-  }
-}
-
-#synthetic .navbar .navbar-inner {
-  @color-light: #e81123;
-  @color-dark: #d30011;
-  .gradient-for-pie(@color-light, @color-dark); 
-  .nav .active > a {
-    background-color: @color-dark;
-  }
-  .nav > li > a {
-    &:hover {
-      background-color: @color-dark;
-    }
-  }
-  .btn-navbar {
-    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
-  }
-}
-
-#references .navbar .navbar-inner {
+.navbar .navbar-inner {
   @color-light: #b1005d;
   @color-dark: #9e0051;
-  .gradient-for-pie(@color-light, @color-dark); 
-  .nav .active > a {
-    background-color: @color-dark;
-  }
-  .nav > li > a {
-    &:hover {
-      background-color: @color-dark;
-    }
-  }
-  .btn-navbar {
-    .buttonBackground(darken(@color-dark, 5%), darken(@color-dark, 5%));
-  }
-}
-
-#contact .navbar .navbar-inner {
-  @color-light: #ff1769;
-  @color-dark: #ff1769;
-  .gradient-for-pie(@color-light, @color-dark); 
+  #gradient > .vertical(@color-light, @color-dark);
   .nav .active > a {
     background-color: @color-dark;
   }
@@ -472,17 +366,15 @@ footer {
 
 .container-narrow {
   .container;
-  width: 800px;
+  width: 750px;
 }
 .overlap {
   .box-shadow(0 0 15px rgba(0,0,0,0.13));
   margin-top: -100px;
   background-color: #fff;
   position: relative;
-  padding: 0 80px;
-  padding-bottom: 60px;
 }
-.overlap.home {
+#home .overlap {
   margin-top: -200px;
 }
 
@@ -495,7 +387,7 @@ footer {
   }
   .super {
     position: relative;
-    padding-top: 100px;
+    margin-top: 150px;
     float: right;
     font-size: 50px;
   }
@@ -601,11 +493,47 @@ form {
 /* ==========================================================================
    Responsive 
    ========================================================================== */
-@media (max-width: 767px) {
+/* Large desktop */
+@media (min-width: 1200px) { }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { }
+
+// 979 - 2000
+@media (min-width: 979px) { 
+  .container-narrow {
+    .container;
+    width: 75%;
+    .content {
+      padding: 0 10%;
+      padding-bottom: 10%;
+    }
+  }
+}
+
+// 0 - 978
+@media (max-width: 978px) { 
+  .container-narrow {
+    .container;
+    width: auto;
+    .content {
+      padding: 0 5%;
+      padding-bottom: 5%;
+    }
+  }
   body {
     // overide bootstrap 
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .container-narrow {
+   width: auto;
   }
   footer {
     .container {
@@ -633,6 +561,37 @@ form {
     }
   }
 }
+// 0 -768
+@media (max-width: 768px) { 
+  .header {
+    height: auto;
+    img {
+      position: static;
+      display: block;
+    }
+    .super {
+      font-size: 36px;
+      margin-top: 0px;
+      float: none;
+      position: static;
+      line-height: 1.2 !important;
+      margin: 0px !important;
+      .highlight-green;
+      span {
+        padding: 0;
+        background: transparent;
+      }
+    }
+  }
+  .overlap {
+    margin-top: 0;
+  }
+  p, li {
+    font-size: 22px;
+  }
+}
+
+
 
 // there is a specific rule for navbar collapse defined in the variables file
 @media (max-width: @navbarCollapseWidth) {
@@ -644,7 +603,6 @@ form {
     margin-left: 0px;
     margin-right: 0px;
   }
-
   #home .navbar .navbar-inner .brand {
     background-color: transparent;
   }

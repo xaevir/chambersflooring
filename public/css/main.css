@@ -7695,25 +7695,12 @@ a.badge:hover {
 -------------------------------------------------- */
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {
-  .carousel .item {
-    height: 500px;
-  }
   .carousel img {
     width: auto;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .carousel {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-  .carousel .item {
-    height: 300px;
-  }
-  .carousel img {
-    height: 300px;
-  }
   .carousel-caption {
     width: 65%;
     padding: 0 70px;
@@ -8011,404 +7998,23 @@ footer .footer-email {
 .navbar .nav > li > a:hover {
   color: #fff !important;
 }
-#home .navbar .navbar-inner {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#b8d30b) to(#acc601));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#b8d30b, #acc601);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#b8d30b, #acc601);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#b8d30b, #acc601);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#b8d30b, #acc601);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#b8d30b, #acc601);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#b8d30b, #acc601);
-  /*PIE*/
-
-}
-#home .navbar .navbar-inner .nav .active > a,
-#home .navbar .navbar-inner .brand {
-  background-color: #acc601;
-}
-#home .navbar .navbar-inner .nav > li > a:hover,
-#home .navbar .navbar-inner .brand:hover {
-  background-color: #acc601;
-}
-#home .navbar .navbar-inner .btn-navbar {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #96ad01;
-  background-image: -moz-linear-gradient(top, #96ad01, #96ad01);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#96ad01), to(#96ad01));
-  background-image: -webkit-linear-gradient(top, #96ad01, #96ad01);
-  background-image: -o-linear-gradient(top, #96ad01, #96ad01);
-  background-image: linear-gradient(to bottom, #96ad01, #96ad01);
+.navbar .navbar-inner {
+  background-color: #a90058;
+  background-image: -moz-linear-gradient(top, #b1005d, #9e0051);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b1005d), to(#9e0051));
+  background-image: -webkit-linear-gradient(top, #b1005d, #9e0051);
+  background-image: -o-linear-gradient(top, #b1005d, #9e0051);
+  background-image: linear-gradient(to bottom, #b1005d, #9e0051);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff96ad01', endColorstr='#ff96ad01', GradientType=0);
-  border-color: #96ad01 #96ad01 #546100;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #96ad01;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb1005d', endColorstr='#ff9e0051', GradientType=0);
 }
-#home .navbar .navbar-inner .btn-navbar:hover,
-#home .navbar .navbar-inner .btn-navbar:active,
-#home .navbar .navbar-inner .btn-navbar.active,
-#home .navbar .navbar-inner .btn-navbar.disabled,
-#home .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #96ad01;
-  *background-color: #809301;
-}
-#home .navbar .navbar-inner .btn-navbar:active,
-#home .navbar .navbar-inner .btn-navbar.active {
-  background-color: #6a7a01 \9;
-}
-#home .navbar .navbar-inner .btn-navbar:hover,
-#home .navbar .navbar-inner .btn-navbar:active,
-#home .navbar .navbar-inner .btn-navbar.active,
-#home .navbar .navbar-inner .btn-navbar.disabled,
-#home .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #96ad01;
-  *background-color: #809301;
-}
-#home .navbar .navbar-inner .btn-navbar:active,
-#home .navbar .navbar-inner .btn-navbar.active {
-  background-color: #6a7a01 \9;
-}
-#installations .navbar .navbar-inner {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fc9200) to(#e58200));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#fc9200, #e58200);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#fc9200, #e58200);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#fc9200, #e58200);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#fc9200, #e58200);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#fc9200, #e58200);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#fc9200, #e58200);
-  /*PIE*/
-
-}
-#installations .navbar .navbar-inner .nav .active > a {
-  background-color: #e58200;
-}
-#installations .navbar .navbar-inner .nav > li > a:hover {
-  background-color: #e58200;
-}
-#installations .navbar .navbar-inner .btn-navbar {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #cc7400;
-  background-image: -moz-linear-gradient(top, #cc7400, #cc7400);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc7400), to(#cc7400));
-  background-image: -webkit-linear-gradient(top, #cc7400, #cc7400);
-  background-image: -o-linear-gradient(top, #cc7400, #cc7400);
-  background-image: linear-gradient(to bottom, #cc7400, #cc7400);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc7400', endColorstr='#ffcc7400', GradientType=0);
-  border-color: #cc7400 #cc7400 #7f4800;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #cc7400;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-#installations .navbar .navbar-inner .btn-navbar:hover,
-#installations .navbar .navbar-inner .btn-navbar:active,
-#installations .navbar .navbar-inner .btn-navbar.active,
-#installations .navbar .navbar-inner .btn-navbar.disabled,
-#installations .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #cc7400;
-  *background-color: #b26500;
-}
-#installations .navbar .navbar-inner .btn-navbar:active,
-#installations .navbar .navbar-inner .btn-navbar.active {
-  background-color: #995700 \9;
-}
-#installations .navbar .navbar-inner .btn-navbar:hover,
-#installations .navbar .navbar-inner .btn-navbar:active,
-#installations .navbar .navbar-inner .btn-navbar.active,
-#installations .navbar .navbar-inner .btn-navbar.disabled,
-#installations .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #cc7400;
-  *background-color: #b26500;
-}
-#installations .navbar .navbar-inner .btn-navbar:active,
-#installations .navbar .navbar-inner .btn-navbar.active {
-  background-color: #995700 \9;
-}
-#sanding .navbar .navbar-inner {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#00b6de) to(#00a7c9));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#00b6de, #00a7c9);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#00b6de, #00a7c9);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#00b6de, #00a7c9);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#00b6de, #00a7c9);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#00b6de, #00a7c9);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#00b6de, #00a7c9);
-  /*PIE*/
-
-}
-#sanding .navbar .navbar-inner .nav .active > a {
-  background-color: #00a7c9;
-}
-#sanding .navbar .navbar-inner .nav > li > a:hover {
-  background-color: #00a7c9;
-}
-#sanding .navbar .navbar-inner .btn-navbar {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #0092b0;
-  background-image: -moz-linear-gradient(top, #0092b0, #0092b0);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0092b0), to(#0092b0));
-  background-image: -webkit-linear-gradient(top, #0092b0, #0092b0);
-  background-image: -o-linear-gradient(top, #0092b0, #0092b0);
-  background-image: linear-gradient(to bottom, #0092b0, #0092b0);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0092b0', endColorstr='#ff0092b0', GradientType=0);
-  border-color: #0092b0 #0092b0 #005263;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0092b0;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-#sanding .navbar .navbar-inner .btn-navbar:hover,
-#sanding .navbar .navbar-inner .btn-navbar:active,
-#sanding .navbar .navbar-inner .btn-navbar.active,
-#sanding .navbar .navbar-inner .btn-navbar.disabled,
-#sanding .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #0092b0;
-  *background-color: #007d96;
-}
-#sanding .navbar .navbar-inner .btn-navbar:active,
-#sanding .navbar .navbar-inner .btn-navbar.active {
-  background-color: #00677d \9;
-}
-#sanding .navbar .navbar-inner .btn-navbar:hover,
-#sanding .navbar .navbar-inner .btn-navbar:active,
-#sanding .navbar .navbar-inner .btn-navbar.active,
-#sanding .navbar .navbar-inner .btn-navbar.disabled,
-#sanding .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #0092b0;
-  *background-color: #007d96;
-}
-#sanding .navbar .navbar-inner .btn-navbar:active,
-#sanding .navbar .navbar-inner .btn-navbar.active {
-  background-color: #00677d \9;
-}
-#recoating .navbar .navbar-inner {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd800) to(#ffd800));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#ffd800, #ffd800);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#ffd800, #ffd800);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#ffd800, #ffd800);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#ffd800, #ffd800);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#ffd800, #ffd800);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#ffd800, #ffd800);
-  /*PIE*/
-
-}
-#recoating .navbar .navbar-inner .nav .active > a {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ffd800;
-}
-#recoating .navbar .navbar-inner .nav > li > a:hover {
-  background-color: #ffd800;
-}
-#recoating .navbar .navbar-inner .btn-navbar {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #e6c200;
-  background-image: -moz-linear-gradient(top, #e6c200, #e6c200);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6c200), to(#e6c200));
-  background-image: -webkit-linear-gradient(top, #e6c200, #e6c200);
-  background-image: -o-linear-gradient(top, #e6c200, #e6c200);
-  background-image: linear-gradient(to bottom, #e6c200, #e6c200);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe6c200', endColorstr='#ffe6c200', GradientType=0);
-  border-color: #e6c200 #e6c200 #998200;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #e6c200;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-#recoating .navbar .navbar-inner .btn-navbar:hover,
-#recoating .navbar .navbar-inner .btn-navbar:active,
-#recoating .navbar .navbar-inner .btn-navbar.active,
-#recoating .navbar .navbar-inner .btn-navbar.disabled,
-#recoating .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #e6c200;
-  *background-color: #ccad00;
-}
-#recoating .navbar .navbar-inner .btn-navbar:active,
-#recoating .navbar .navbar-inner .btn-navbar.active {
-  background-color: #b39700 \9;
-}
-#recoating .navbar .navbar-inner .btn-navbar:hover,
-#recoating .navbar .navbar-inner .btn-navbar:active,
-#recoating .navbar .navbar-inner .btn-navbar.active,
-#recoating .navbar .navbar-inner .btn-navbar.disabled,
-#recoating .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #e6c200;
-  *background-color: #ccad00;
-}
-#recoating .navbar .navbar-inner .btn-navbar:active,
-#recoating .navbar .navbar-inner .btn-navbar.active {
-  background-color: #b39700 \9;
-}
-#synthetic .navbar .navbar-inner {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e81123) to(#d30011));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#e81123, #d30011);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#e81123, #d30011);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#e81123, #d30011);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#e81123, #d30011);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#e81123, #d30011);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#e81123, #d30011);
-  /*PIE*/
-
-}
-#synthetic .navbar .navbar-inner .nav .active > a {
-  background-color: #d30011;
-}
-#synthetic .navbar .navbar-inner .nav > li > a:hover {
-  background-color: #d30011;
-}
-#synthetic .navbar .navbar-inner .btn-navbar {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ba000f;
-  background-image: -moz-linear-gradient(top, #ba000f, #ba000f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ba000f), to(#ba000f));
-  background-image: -webkit-linear-gradient(top, #ba000f, #ba000f);
-  background-image: -o-linear-gradient(top, #ba000f, #ba000f);
-  background-image: linear-gradient(to bottom, #ba000f, #ba000f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffba000f', endColorstr='#ffba000f', GradientType=0);
-  border-color: #ba000f #ba000f #6d0009;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #ba000f;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-#synthetic .navbar .navbar-inner .btn-navbar:hover,
-#synthetic .navbar .navbar-inner .btn-navbar:active,
-#synthetic .navbar .navbar-inner .btn-navbar.active,
-#synthetic .navbar .navbar-inner .btn-navbar.disabled,
-#synthetic .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #ba000f;
-  *background-color: #a0000d;
-}
-#synthetic .navbar .navbar-inner .btn-navbar:active,
-#synthetic .navbar .navbar-inner .btn-navbar.active {
-  background-color: #86000b \9;
-}
-#synthetic .navbar .navbar-inner .btn-navbar:hover,
-#synthetic .navbar .navbar-inner .btn-navbar:active,
-#synthetic .navbar .navbar-inner .btn-navbar.active,
-#synthetic .navbar .navbar-inner .btn-navbar.disabled,
-#synthetic .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #ba000f;
-  *background-color: #a0000d;
-}
-#synthetic .navbar .navbar-inner .btn-navbar:active,
-#synthetic .navbar .navbar-inner .btn-navbar.active {
-  background-color: #86000b \9;
-}
-#references .navbar .navbar-inner {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#b1005d) to(#9e0051));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#b1005d, #9e0051);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#b1005d, #9e0051);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#b1005d, #9e0051);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#b1005d, #9e0051);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#b1005d, #9e0051);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#b1005d, #9e0051);
-  /*PIE*/
-
-}
-#references .navbar .navbar-inner .nav .active > a {
+.navbar .navbar-inner .nav .active > a {
   background-color: #9e0051;
 }
-#references .navbar .navbar-inner .nav > li > a:hover {
+.navbar .navbar-inner .nav > li > a:hover {
   background-color: #9e0051;
 }
-#references .navbar .navbar-inner .btn-navbar {
+.navbar .navbar-inner .btn-navbar {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #850044;
@@ -8426,111 +8032,38 @@ footer .footer-email {
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-#references .navbar .navbar-inner .btn-navbar:hover,
-#references .navbar .navbar-inner .btn-navbar:active,
-#references .navbar .navbar-inner .btn-navbar.active,
-#references .navbar .navbar-inner .btn-navbar.disabled,
-#references .navbar .navbar-inner .btn-navbar[disabled] {
+.navbar .navbar-inner .btn-navbar:hover,
+.navbar .navbar-inner .btn-navbar:active,
+.navbar .navbar-inner .btn-navbar.active,
+.navbar .navbar-inner .btn-navbar.disabled,
+.navbar .navbar-inner .btn-navbar[disabled] {
   color: #ffffff;
   background-color: #850044;
   *background-color: #6b0037;
 }
-#references .navbar .navbar-inner .btn-navbar:active,
-#references .navbar .navbar-inner .btn-navbar.active {
+.navbar .navbar-inner .btn-navbar:active,
+.navbar .navbar-inner .btn-navbar.active {
   background-color: #52002a \9;
 }
-#references .navbar .navbar-inner .btn-navbar:hover,
-#references .navbar .navbar-inner .btn-navbar:active,
-#references .navbar .navbar-inner .btn-navbar.active,
-#references .navbar .navbar-inner .btn-navbar.disabled,
-#references .navbar .navbar-inner .btn-navbar[disabled] {
+.navbar .navbar-inner .btn-navbar:hover,
+.navbar .navbar-inner .btn-navbar:active,
+.navbar .navbar-inner .btn-navbar.active,
+.navbar .navbar-inner .btn-navbar.disabled,
+.navbar .navbar-inner .btn-navbar[disabled] {
   color: #ffffff;
   background-color: #850044;
   *background-color: #6b0037;
 }
-#references .navbar .navbar-inner .btn-navbar:active,
-#references .navbar .navbar-inner .btn-navbar.active {
+.navbar .navbar-inner .btn-navbar:active,
+.navbar .navbar-inner .btn-navbar.active {
   background-color: #52002a \9;
-}
-#contact .navbar .navbar-inner {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1769) to(#ff1769));
-  /*old webkit*/
-
-  background: -webkit-linear-gradient(#ff1769, #ff1769);
-  /*new webkit*/
-
-  background: -moz-linear-gradient(#ff1769, #ff1769);
-  /*gecko*/
-
-  background: -ms-linear-gradient(#ff1769, #ff1769);
-  /*IE10 preview*/
-
-  background: -o-linear-gradient(#ff1769, #ff1769);
-  /*opera 11.10+*/
-
-  background: linear-gradient(#ff1769, #ff1769);
-  /*future CSS3 browsers*/
-
-  -pie-background: linear-gradient(#ff1769, #ff1769);
-  /*PIE*/
-
-}
-#contact .navbar .navbar-inner .nav .active > a {
-  background-color: #ff1769;
-}
-#contact .navbar .navbar-inner .nav > li > a:hover {
-  background-color: #ff1769;
-}
-#contact .navbar .navbar-inner .btn-navbar {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #fc0059;
-  background-image: -moz-linear-gradient(top, #fc0059, #fc0059);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fc0059), to(#fc0059));
-  background-image: -webkit-linear-gradient(top, #fc0059, #fc0059);
-  background-image: -o-linear-gradient(top, #fc0059, #fc0059);
-  background-image: linear-gradient(to bottom, #fc0059, #fc0059);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffc0059', endColorstr='#fffc0059', GradientType=0);
-  border-color: #fc0059 #fc0059 #b0003e;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #fc0059;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-#contact .navbar .navbar-inner .btn-navbar:hover,
-#contact .navbar .navbar-inner .btn-navbar:active,
-#contact .navbar .navbar-inner .btn-navbar.active,
-#contact .navbar .navbar-inner .btn-navbar.disabled,
-#contact .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #fc0059;
-  *background-color: #e30050;
-}
-#contact .navbar .navbar-inner .btn-navbar:active,
-#contact .navbar .navbar-inner .btn-navbar.active {
-  background-color: #c90047 \9;
-}
-#contact .navbar .navbar-inner .btn-navbar:hover,
-#contact .navbar .navbar-inner .btn-navbar:active,
-#contact .navbar .navbar-inner .btn-navbar.active,
-#contact .navbar .navbar-inner .btn-navbar.disabled,
-#contact .navbar .navbar-inner .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #fc0059;
-  *background-color: #e30050;
-}
-#contact .navbar .navbar-inner .btn-navbar:active,
-#contact .navbar .navbar-inner .btn-navbar.active {
-  background-color: #c90047 \9;
 }
 .container-narrow {
   width: 940px;
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;
-  width: 800px;
+  width: 750px;
 }
 .container-narrow:before,
 .container-narrow:after {
@@ -8575,10 +8108,8 @@ footer .footer-email {
   margin-top: -100px;
   background-color: #fff;
   position: relative;
-  padding: 0 80px;
-  padding-bottom: 60px;
 }
-.overlap.home {
+#home .overlap {
   margin-top: -200px;
 }
 .header {
@@ -8591,7 +8122,7 @@ footer .footer-email {
 }
 .header .super {
   position: relative;
-  padding-top: 100px;
+  margin-top: 150px;
   float: right;
   font-size: 50px;
 }
@@ -8736,10 +8267,125 @@ form span.error {
 /* ==========================================================================
    Responsive 
    ========================================================================== */
+/* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+/* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  
+}
+@media (min-width: 979px) {
+  .container-narrow {
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    *zoom: 1;
+    width: 75%;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow .content {
+    padding: 0 10%;
+    padding-bottom: 10%;
+  }
+}
+@media (max-width: 978px) {
+  .container-narrow {
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    *zoom: 1;
+    width: auto;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow:before,
+  .container-narrow:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .container-narrow:after {
+    clear: both;
+  }
+  .container-narrow .content {
+    padding: 0 5%;
+    padding-bottom: 5%;
+  }
   body {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .container-narrow {
+    width: auto;
   }
   footer .container {
     width: auto;
@@ -8763,6 +8409,37 @@ form span.error {
   }
   footer ul li ul li {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+  .header img {
+    position: static;
+    display: block;
+  }
+  .header .super {
+    font-size: 36px;
+    margin-top: 0px;
+    float: none;
+    position: static;
+    line-height: 1.2 !important;
+    margin: 0px !important;
+    background: #b8d30b;
+    background: rgba(184, 211, 11, 0.75);
+    padding: 14px 20px 6px 20px;
+  }
+  .header .super span {
+    padding: 0;
+    background: transparent;
+  }
+  .overlap {
+    margin-top: 0;
+  }
+  p,
+  li {
+    font-size: 22px;
   }
 }
 @media (max-width: 979px) {
