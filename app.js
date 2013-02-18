@@ -64,7 +64,8 @@ app.get('/*', function(req, res, next) {
 
 
 app.get('/', function(req, res) {
-  res.render('index', { page: 'home' });
+  locals.page = 'home'
+  res.render('index', locals);
 })
 
 app.get('/new-installations-and-retrofitting', function(req, res) {
@@ -74,27 +75,33 @@ app.get('/new-installations-and-retrofitting', function(req, res) {
 })
 
 app.get('/annual-recoating', function(req, res) {
-  res.render('annual-recoating', {title: 'Annual Recoating', page: 'recoating'});
+  locals.title = 'Annual Recoating'
+  locals.page = 'recoating'
+  res.render('annual-recoating', locals);
 })
 
 app.get('/synthetic-flooring', function(req, res) {
-  res.render('synthetic', { title: 'Synthetic Flooring', page: 'synthetic' });
+  locals.title = 'Synthetic Flooring'
+  locals.page = 'synthetic'
+  res.render('synthetic', { title: , locals});
 })
 
 app.get('/references', function(req, res) {
-  res.render('references', {title: 'References', page: 'references'});
+  locals.title = 'References'
+  locals.page = 'references'
+  res.render('references', locals);
 })
 
 app.get('/sanding-and-refinishing', function(req, res) {
-  res.render('sanding-and-refinishing', {title: 'Sanding and Refinishing', page: 'sanding'});
-})
-
-app.get('/references', function(req, res) {
-  res.render('references', {title: 'References'});
+  locals.title = 'Sanding and Refinishing'
+  locals.page = 'sanding'
+  res.render('sanding-and-refinishing', locals);
 })
 
 app.get('/contact', function(req, res) {
-  res.render('contact', {title: 'Contact', page: 'contact'});
+  locals.title = 'Contact'
+  locals.page = 'contact'
+  res.render('contact', locals);
 })
 
 app.post('/contact', function(req, res, next) {
