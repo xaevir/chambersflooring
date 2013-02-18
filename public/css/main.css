@@ -7734,6 +7734,9 @@ h3 {
 }
 .highlight-green {
   background: transparent;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFB8D30B,endColorstr=#BFB8D30B);
+  /* IE8 */
+
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFB8D30B,endColorstr=#BFB8D30B);
   /* IE6 & 7 */
 
