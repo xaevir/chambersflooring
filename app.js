@@ -39,24 +39,24 @@ app.configure('production', function(){
 
 /* redirect from www */
 app.get('/*', function(req, res, next) {
-  if (req.headers.host.match(/^www/) !== null ) {
+  if (req.headers.host.match(/^www\.chambersandsonsflooring\.com/) !== null ) {
+    var new_url = 'http://' + req.headers.host.replace(/^www\.chambersandsonsflooring\.com/, 'chambersflooring.com') + req.url
+    res.redirect(301, new_url);
+  }
+  else if (req.headers.host.match(/^chambersandsonsflooring\.com/) !== null ) {
+    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonsflooring\.com/, 'chambersflooring.com') + req.url
+    res.redirect(301, new_url);
+  }
+  else if (req.headers.host.match(/^www\.chambersandsonflooring\.com/) !== null ) {
+    var new_url = 'http://' + req.headers.host.replace(/^www\.chambersandsonflooring/, 'chambersflooring.com') + req.url
+    res.redirect(301, new_url);
+  }
+  else if (req.headers.host.match(/^chambersandsonflooring\.com/) !== null ) {
+    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonflooring/, 'chambersflooring.com') + req.url
+    res.redirect(301, new_url);
+  }
+  else if (req.headers.host.match(/^www/) !== null ) {
     var new_url = 'http://' + req.headers.host.replace(/^www\./, '') + req.url
-    res.redirect(301, new_url);
-  }
-  else next();
-});
-
-app.get('/*', function(req, res, next) {
-  if (req.headers.host.match(/^chambersandsonsflooring/) !== null ) {
-    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonsflooring/, 'chambersflooring') + req.url
-    res.redirect(301, new_url);
-  }
-  else next();
-});
-
-app.get('/*', function(req, res, next) {
-  if (req.headers.host.match(/^chambersandsonflooring/) !== null ) {
-    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonflooring/, 'chambersflooring') + req.url
     res.redirect(301, new_url);
   }
   else next();
