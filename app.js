@@ -83,7 +83,7 @@ app.get('/annual-recoating', function(req, res) {
 app.get('/synthetic-flooring', function(req, res) {
   locals.title = 'Synthetic Flooring'
   locals.page = 'synthetic'
-  res.render('synthetic', { title: , locals});
+  res.render('synthetic', locals);
 })
 
 app.get('/references', function(req, res) {
