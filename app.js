@@ -38,7 +38,7 @@ app.configure('production', function(){
 });
 
 /* redirect from www */
-app.get('/*', function(req, res, next) {
+/*app.get('/*', function(req, res, next) {
   if (req.headers.host.match(/^www\.chambersandsonsflooring\.com/) !== null ) {
     var new_url = 'http://' + req.headers.host.replace(/^www\.chambersandsonsflooring\.com/, 'chambersflooring.com') + req.url
     res.redirect(301, new_url);
@@ -61,7 +61,7 @@ app.get('/*', function(req, res, next) {
   }
   else next();
 });
-
+*/
 
 app.get('/', function(req, res) {
   locals.page = 'home'
