@@ -48,7 +48,7 @@ app.get('/*', function(req, res, next) {
 
 app.get('/*', function(req, res, next) {
   if (req.headers.host.match(/^chambersandsonsflooring/) !== null ) {
-    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonsflooring\./, 'chambersflooring') + req.url
+    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonsflooring/, 'chambersflooring') + req.url
     res.redirect(301, new_url);
   }
   else next();
@@ -56,7 +56,7 @@ app.get('/*', function(req, res, next) {
 
 app.get('/*', function(req, res, next) {
   if (req.headers.host.match(/^chambersandsonflooring/) !== null ) {
-    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonflooring\./, 'chambersflooring') + req.url
+    var new_url = 'http://' + req.headers.host.replace(/^chambersandsonflooring/, 'chambersflooring') + req.url
     res.redirect(301, new_url);
   }
   else next();
