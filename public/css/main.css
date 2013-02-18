@@ -7733,6 +7733,7 @@ h3 {
   text-shadow: none !important;
 }
 .highlight-green {
+  padding: 14px 20px 6px 20px;
   background: transparent;
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFB8D30B,endColorstr=#BFB8D30B);
   /* IE8 */
@@ -7741,7 +7742,6 @@ h3 {
   /* IE6 & 7 */
 
   zoom: 1;
-  padding: 14px 20px 6px 20px;
 }
 .highlight-black {
   background: #181818;
