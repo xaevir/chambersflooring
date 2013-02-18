@@ -7733,15 +7733,9 @@ h3 {
   text-shadow: none !important;
 }
 .highlight-green {
+  background: #b8d30b;
+  background: rgba(184, 211, 11, 0.75);
   padding: 14px 20px 6px 20px;
-  background: transparent;
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFB8D30B,endColorstr=#BFB8D30B);
-  /* IE8 */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFB8D30B,endColorstr=#BFB8D30B);
-  /* IE6 & 7 */
-
-  zoom: 1;
 }
 .highlight-black {
   background: #181818;

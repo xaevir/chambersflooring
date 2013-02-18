@@ -14,9 +14,9 @@ html(lang="en")
     //if lt IE 9
       script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
       script(src='/js/libs/respond.js')
-    //if lt IE 8
+    //if lt IE 9
       script 
-        alert("Sorry, but your browser is not supported. Please use another browser or upgrade for a better experience. Thanks!")
+        alert("Sorry, but your browser is not supported properly. Please upgrade your version of Internet Explorer for a better experience. Thanks!")
 
     if locals.env === 'production'
       script(data-main='js/main-built', src='/js/libs/require.js')
