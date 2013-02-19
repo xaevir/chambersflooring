@@ -7747,7 +7747,11 @@ h3 {
   padding: 5px 26px;
 }
 .highlight-white {
-  background: #fff;
+  display: inline-block;
+  padding: 0 5px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
+  background: rgba(255, 255, 255, 0.75);
+  color: #333;
 }
 #myCarousel .lead {
   font-family: Nexa-Bold, Arial, sans-serif !important;
