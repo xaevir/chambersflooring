@@ -7735,6 +7735,7 @@ h3 {
 .highlight-green {
   display: inline-block;
   padding: 14px 20px 6px 20px;
+  margin-top: -20px;
   background: none;
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFB8D30B,endColorstr=#BFB8D30B);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFB8D30B,endColorstr=#BFB8D30B);
@@ -7748,7 +7749,7 @@ h3 {
 }
 .highlight-white {
   display: inline-block;
-  padding: 0 5px;
+  padding: 10px;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
   background: rgba(255, 255, 255, 0.75);
   color: #333;
