@@ -64,7 +64,6 @@ app.get('/*', function(req, res, next) {
 
 
 app.get('/', function(req, res) {
-  locals.title ='Chambers and Sons Flooring'
   locals.page = 'home'
   res.render('index', locals);
 })
