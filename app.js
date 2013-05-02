@@ -64,6 +64,7 @@ app.get('/*', function(req, res, next) {
 
 
 app.get('/', function(req, res) {
+  locals.title = ''
   locals.page = 'home'
   res.render('index', locals);
 })
