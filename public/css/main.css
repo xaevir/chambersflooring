@@ -8318,6 +8318,12 @@ form span.error {
     padding-bottom: 10%;
   }
 }
+@media (max-width: 1024px) {
+  .navbar .nav > li > a {
+    padding: 25px 10px;
+    font-size: 14px;
+  }
+}
 @media (max-width: 978px) {
   .container-narrow {
     width: 940px;
