@@ -124,7 +124,7 @@ function email(opts) {
   var message = {
       from: 'Website Contact Page <contact@chambersflooring.com>',
       // Comma separated list of recipients
-      to: 'info@chambersflooring.com',
+      to: 'pphillips@chambersflooring.com',
   }
   message.subject = opts.subject
   message.html = opts.html
