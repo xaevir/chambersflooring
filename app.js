@@ -1,41 +1,50 @@
-
-/**
- * Module dependencies.
- */
-
 var express = require('express')
-  , routes = require('./routes')
-  , user = require('./routes/user')
-  , http = require('http')
-  , path = require('path')
-  , nodemailer = require("nodemailer")
-  , smtpTransport = nodemailer.createTransport("SMTP", {host: "localhost"})
-
-
 var app = express();
-
-app.configure(function(){
-  app.set('port', process.env.PORT || 8060);
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
-  app.use(express.logger());
-  app.use(express.favicon());
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(app.router);
-  app.use(express.static(path.join(__dirname, 'public')));
+var routes = require('./routes');
+var serveStatic = require('serve-static');
+var user = require('./routes/user');
+var path = require('path');
+var bodyParser = require('body-parser');
+var router = express.Router();
+var errorhandler = require('errorhandler');
+var nodemailer = require("nodemailer")
+var transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: 'chambersflooring33@gmail.com', // Your email id
+    pass: 'ironman33' // Your password
+  }
 });
+
+var mailOptions = {
+    from: 'chambersflooring33@gmail.com', // sender address
+    to: 'pphillips@chambersflooring.com', // Comma separated list of recipients
+    subject: 'Website Contact Form', // Subject line
+    html: '' // HTML body
+}
+
+var port = process.env.PORT || 8060;
+
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
+//app.use(express.favicon());
+//app.use(express.methodOverride());
+app.use(serveStatic(path.join(__dirname, 'public')));
 
 var locals = {}
 
-app.configure('development', function(){
-  app.use(express.errorHandler());
+var env = process.env.NODE_ENV || 'development';
+if ('development' == env) {
+  app.use(errorhandler())
   locals.env = 'development'
-});
-
-app.configure('production', function(){
-  locals.env = 'production'
-});
+}
 
 /* redirect from www */
 app.get('/*', function(req, res, next) {
@@ -61,7 +70,6 @@ app.get('/*', function(req, res, next) {
   }
   else next();
 });
-
 
 app.get('/', function(req, res) {
   locals.title = ''
@@ -105,40 +113,27 @@ app.get('/contact', function(req, res) {
   res.render('contact', locals);
 })
 
+
 app.post('/contact', function(req, res, next) {
   var html  = '<p>name: '+req.body.name+'</p>'
       html += '<p>email: '+req.body.email+'</p>'
       html += '<p>message: '+req.body.message+'</p>'
-  email(
-    {
-      subject: 'Website Contact Page', 
-      html: html 
-    })
-    res.send(req.body)
+
+  mailOptions.html = html;
+
+  //if (env === 'development')
+  //  return console.log(html)
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if(error){
+      console.log(error);
+      res.json({yo: 'error'});
+    }else{
+      console.log('Message sent: ' + info.response);
+      res.json({yo: info.response});
+    };
+  });
 })
 
-function email(opts) {
-  if (app.settings.env === 'development')
-    return console.log(opts.html)
-
-  var message = {
-      from: 'Website Contact Page <contact@chambersflooring.com>',
-      // Comma separated list of recipients
-      to: 'pphillips@chambersflooring.com',
-  }
-  message.subject = opts.subject
-  message.html = opts.html
-
-  smtpTransport.sendMail(message, function(error, response){
-    if(error)
-      console.log(error);
-    else
-      console.log("Email sent: " + response.message);
-    smtpTransport.close(); // shut down the connection pool, no more messages
-  })
-}
-
-
-http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
-});
+app.listen(port);
+console.log('Magic happens on port ' + port);
